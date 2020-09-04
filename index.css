@@ -1,0 +1,43 @@
+*{margin: 0px
+
+}
+#logo{ width: 80px; height: 80px
+}
+a{text-decoration: none;
+
+}
+body{ font-family: sans-serif;
+
+}
+.cont{ display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-template-areas:
+	"header header"
+	"nav nav"
+	"main aside"
+	"footer" "footer"
+
+}
+header{ height: 17vh;
+	grid-area: header;
+
+}
+header>h1{ font-size: 55px; letter-spacing: 4px;
+		 margin-left: 60px
+
+}
+#logo{ position: absolute; right: 20px; top: 10px
+
+}
+.naveg{grid-area: nav; height: 10vh;
+
+}
+.menu{grid-area: main; height:
+
+}
+.aside{grid-area: aside
+
+}
+.pie{grid-area: footer
+
+}

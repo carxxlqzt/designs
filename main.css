@@ -1,0 +1,95 @@
+*{ font-family:'Open Sans Condensed', sans-serif
+
+}
+.container{color: black;
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-gap: 1em;
+	grid-template-areas: "header header"
+						 "contenido aside"
+						 "footer footer" 
+}
+.uno{ grid-area: header; background-color: #d0d2d3;
+ height: 10vh; display: flex; flex-direction: column; flex-wrap: wrap}
+ .cabecera>h1{ font-size: 37px; color: white; margin: 0px
+
+ }
+#logo{width: 63px; height: 63px
+
+}
+
+.cabecera{display: flex; flex-direction: row;
+ justify-content: space-around; align-items: center;
+flex-wrap: wrap ;}
+.navbar{ flex-wrap: wrap; flex-direction: column;}
+.navbar>a{ text-decoration: none; font-size: 20px;
+	 color: white; padding: 8px; margin: 0px 5px;
+	 background-color: #8e8f90; flex-wrap: wrap
+}
+nav>a:hover { background-color: white; color: #8e8f90
+
+}
+.dos{ grid-area: contenido; background-color: white;
+	height: 75vh;
+
+}
+
+.dos>h1{ text-align: center; font-size: 48px
+
+}
+.contenido{margin-top: 80px
+
+}
+.contenido .cdentro{ height: 50vh;
+			margin-left: 50px;
+			display: flex; justify-content: space-around;
+
+	     
+
+}
+
+.contenido .cdentro>div{ border: black solid;
+  width: 200px;height: 300px
+
+}
+.cdentro>div>img{ width: 130px; height: 130px;
+
+}
+.cdentro>div{ display: flex; 
+			flex-direction: column; align-items: center;
+		}
+
+.cdentro>div>h2{ font-size: 20px}
+
+
+.tres{grid-area: aside; background-color: orange; 
+	height: 75vh
+
+}
+.news{ display: flex; flex-direction: column;
+	justify-content: space-around; margin-left: 30px
+
+}
+.news img{ width: 50px; height: 50px
+
+}
+.news h3{font-size: 30px;
+
+}
+.news div:hover { border: black solid
+
+}
+.cuatro{grid-area: footer; background-color: grey;
+height: 5vh}
+.cuatro>h1{ margin: 0px
+}
+.footerbar{ display: flex; justify-content: space-around;
+	align-items: center;
+
+}
+.footerbar>a{ text-decoration: none; color: white
+
+}
+@media(max-width: 600px){#logo{display: none;}.navbar{display: none;}
+
+}

@@ -1,0 +1,74 @@
+html{scroll-behavior:smooth}
+.casa-simpsons{
+            display: grid;
+            grid-template-columns: repeat(3,100vw);
+            grid-template-rows: repeat(4,100vh);}
+#entrada{width: 100vw;height: 100vh;
+        background-color: chocolate;
+        display: flex; flex-direction: column;
+        justify-content: center;align-items: center;
+        perspective: 120px}
+#maggie{
+    width: 200px;height: 200px;
+    transform:rotateX(30deg);
+   
+    /*animation-name: maggiea;
+    animation-duration: 5s;
+    animation-iteration-count: infinite*/
+    }
+.maggie{transition: all 4s;
+    transition-timing-function: linear;
+
+}
+#maggie:hover{
+    transform:translate3d(-50px,-50px,80px) rotateX(30deg) 
+}
+    
+   /* transition: all 3s;
+    transition-timing-function: linear;
+}
+#maggie:hover{
+    transform: translateY(-200px);
+}*/
+/*@keyframes maggiea{
+    0%{transform: translateY(20%);}
+    50%{transform: translateY(150%);}
+    100%{transform:translateY(-120%)}
+}*/
+.boton-e{width: 80px;
+    height: 80px;
+    background-color:transparent;
+    position: absolute;
+    right: 30px;}
+#boton{width: 20px;
+    height: 20px;
+    background-color:transparent;
+    border-left: solid black;
+    border-radius: 10px}
+#boton:hover{
+    transform:scaleX(2)
+}
+
+#hall{width: 100vw;
+    height: 100vh;
+    background-color: darkmagenta;
+    
+    }
+#botona{width: 20px;
+        height: 30px;
+        background-color: tomato;
+        border-radius: 10px;}
+#living{
+    width: 100vw;
+    height: 100vh;
+    background-color: violet;
+
+}
+#comedor{width:100vw;
+        height: 100vh;
+    background-color:royalblue}
+#cocina{
+    width: 100vw;
+    height: 100vh;
+    background-color: seagreen;
+}

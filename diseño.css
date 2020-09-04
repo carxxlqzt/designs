@@ -1,0 +1,21 @@
+.uno,.dos,.tres,.cuatro{ background-color: grey; color:white;}
+.container{ display: grid;
+grid-template-areas:
+"uno uno"
+"dos tres"
+"cuatro tres"; grid-template-columns: 70% 30%;}
+
+.uno{grid-area: uno; display: flex; 
+    flex-direction: row; flex-wrap: wrap;
+    }
+.uno *{width: 300px;}
+
+.dos{grid-area: dos;display: flex;
+    flex-direction: row; flex-wrap: wrap;}
+.dos div{width: 500px;height:600px; }
+
+.tres{grid-area: tres;}
+
+.cuatro{grid-area: cuatro; display:flex;
+    flex-direction:row;}
+.cuatro div{width: 400px;}
